@@ -1,0 +1,11 @@
+{
+    "name": "angular-seed",
+    "description": "A starter application for AngularJS apps",
+    "version": "0.0.1",
+    "homepage": "https://github.com/maerlyngb/angular-seed",
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+        "bootstrap": "3.3.x"
+    }
+}
