@@ -4,17 +4,30 @@
 <head>
     <meta charset="utf-8">
     <title>AngularJS Starter App</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/app.css" />
-    <script src="scripts/app.js"></script>
 </head>
 
 <body>
+
+    <top-nav></top-nav>
+    <!--<side-nav></side-nav>-->
 
     <div class="view-container">
         <div ng-view class="view-frame"></div>
     </div>
 
+    <footer class="footer">
+        <div class="view-container">
+            <p class="small pull-left">Petronas GTS Dashboard</p>
+            <p class="small pull-right">© 2017</p>
+        </div>
+    </footer>
+
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="scripts/app.js"></script>
 
 </html>

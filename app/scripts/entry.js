@@ -1,9 +1,10 @@
 (function () {
     'use strict';
 
-    require('jquery');
+    //var $ = require('jquery');
     require('angular');
     require('angular-route');
+    //require('bootstrap')
 
     require('./components/app');
     require('./components/pages');

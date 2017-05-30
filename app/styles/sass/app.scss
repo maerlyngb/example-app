@@ -1,14 +1,59 @@
-body {
-    padding: 20px;
+$banner-colour: #2c404c;
+$banner-text-colour: #b6c3cc;
+$footer-height: 60px;
+$nav-background-color: #1b2a33;
+
+
+html {
+    position: relative;
+    min-height: 100%;
 }
 
-h1 {
-    border-bottom: 1px solid gray;
-    margin-top: 0;
+body {
+    margin-bottom: $footer-height;
+    background-color: #8b8d8f;
+}
+
+body>.view-container {
+    padding: 60px 15px 0;
+    //margin-left: 250px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: $footer-height;
+    background-color: $banner-colour;
+    color: $banner-text-colour;
+    p {
+        margin: 20px 0;
+    }
+    .view-container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+.navbar-inverse {
+    background-color: $banner-colour;
+}
+
+.navbar-inverse .navbar-brand {
+    color: $banner-text-colour;
 }
 
 .asset-summary {
     height: 100px;
-    background-color: lightgray;
+    background-color: white;
     margin-bottom: 15px;
+    padding: 1rem;
+}
+
+.side-nav {
+    background: $nav-background-color;
+    padding: 1em;
+    justify-content: space-between;
+    color: $banner-text-colour;
+    height: 100%;
 }
