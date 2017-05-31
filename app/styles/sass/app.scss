@@ -8,7 +8,7 @@ html {
 
 body {
     margin-bottom: $footer-height;
-    background-color: #8b8d8f;
+    background-color: $neutral-gray5;
 }
 
 body>.view-container {
@@ -28,8 +28,8 @@ body>.view-container {
     bottom: 0;
     width: 100%;
     height: $footer-height;
-    background-color: $banner-colour;
-    color: $banner-text-colour;
+    background-color: $gray15;
+    color: $gray5;
     p {
         margin: 20px 0;
     }
@@ -37,4 +37,19 @@ body>.view-container {
         padding-right: 15px;
         padding-left: 15px;
     }
+}
+
+// .navbar-inverse {
+//     background-color: $gray15;
+// }
+
+// .navbar-inverse .navbar-brand {
+//     color: $gray5;
+// }
+
+.asset-summary {
+    height: 100px;
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 1rem;
 }
