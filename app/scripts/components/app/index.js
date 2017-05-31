@@ -3,4 +3,5 @@
 
     require('./app.module');
     require('./app.config');
+    require('./app.component');
 })();

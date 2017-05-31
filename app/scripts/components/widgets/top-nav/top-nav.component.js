@@ -8,7 +8,7 @@
         templateUrl: 'views/top-nav.template.html',
         controller: [
             function TopNavController() {
-                this.appName = 'GTS Dashboard'
+                this.appName = 'GTS Dashboard';
             }
         ]
     });

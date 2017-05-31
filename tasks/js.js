@@ -25,7 +25,7 @@ module.exports = function (gulp, APP_DIR) {
             //     loadMaps: true
             // }))
             // Add transformation tasks to the pipeline here.
-            .pipe(uglify())
+            //.pipe(uglify())
             .on('error', gutil.log)
             //.pipe(sourcemaps.write('./'))
             .pipe(gulp.dest('./app/scripts/'));

@@ -1,8 +1,5 @@
-$banner-colour: #2c404c;
-$banner-text-colour: #b6c3cc;
-$footer-height: 60px;
-$nav-background-color: #1b2a33;
-
+@import 'colours.scss';
+@import 'navbar.scss';
 
 html {
     position: relative;
@@ -15,8 +12,15 @@ body {
 }
 
 body>.view-container {
-    padding: 60px 15px 0;
-    //margin-left: 250px;
+    padding: 15px 15px 0;
+    margin-left: 300px;
+}
+
+@media (max-width: 767px) {
+  body>.view-container {
+    padding: 15px 15px 0;
+    margin-left: 0;
+}
 }
 
 .footer {
@@ -33,27 +37,4 @@ body>.view-container {
         padding-right: 15px;
         padding-left: 15px;
     }
-}
-
-.navbar-inverse {
-    background-color: $banner-colour;
-}
-
-.navbar-inverse .navbar-brand {
-    color: $banner-text-colour;
-}
-
-.asset-summary {
-    height: 100px;
-    background-color: white;
-    margin-bottom: 15px;
-    padding: 1rem;
-}
-
-.side-nav {
-    background: $nav-background-color;
-    padding: 1em;
-    justify-content: space-between;
-    color: $banner-text-colour;
-    height: 100%;
 }

@@ -1,30 +1,29 @@
-<div id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-        <li class="sidebar-brand">
-            <a href="#">
-                        Start Bootstrap
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<div class="nav-side-menu">
+    <div class="brand">{{$ctrl.title}}</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+
+    <div class="menu-list">
+
+        <ul id="menu-content" class="menu-content collapse out">
+            <div ng-repeat="tab in $ctrl.tabs | orderBy:'index'">
+
+                <li data-toggle="collapse" data-target="#sub-menu-{{$index}}" ng-class="{active: tab.active, collapsed: tab.subtabs.length > 0}">
+                    <a ng-href="{{tab.href}}">
+                        <i class="fa fa-lg" ng-class="tab.icon"></i> {{tab.title}} <span ng-show="tab.subtabs.length > 0"
+                            class="arrow"></span>
                     </a>
-        </li>
-        <li>
-            <a href="#">Dashboard</a>
-        </li>
-        <li>
-            <a href="#">Shortcuts</a>
-        </li>
-        <li>
-            <a href="#">Overview</a>
-        </li>
-        <li>
-            <a href="#">Events</a>
-        </li>
-        <li>
-            <a href="#">About</a>
-        </li>
-        <li>
-            <a href="#">Services</a>
-        </li>
-        <li>
-            <a href="#">Contact</a>
-        </li>
-    </ul>
+                </li> <!--menu item-->
+
+                <ul class="sub-menu collapse" id="sub-menu-{{$index}}">
+                    <li ng-repeat="subtab in tab.subtabs | orderBy:'tab_id'" ng-class="{active: subtab.active}">
+                        <a ng-href="{{subtab.href}}">{{ subtab.title }}</a>
+                    </li>
+                </ul> <!--sub-menu-->
+
+            </div>
+        </ul> <!--menu-content-->
+
+    </div>
 </div>
