@@ -6,6 +6,7 @@
         'ngRoute',
         'sideNav',
         'topNav',
-        'landingPage'
+        'landingPage',
+        'assetDetail'
     ]);
 })();
