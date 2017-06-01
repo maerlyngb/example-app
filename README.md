@@ -41,7 +41,7 @@ gulp dist
 
 ```
 .
-├── dist/                         --> distributable code
+├── dist/                         --> distributable code (appears after gulp dist)
 ├── app/                          --> all the source code of the app
 │   ├── bower_components/         --> 3rd party JS/CSS libraries
 │   ├── img/                      --> applicaiton images
