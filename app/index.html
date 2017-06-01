@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>AngularJS Starter App</title>
+    <title>{{App.name}}</title>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="styles/app.css" />
 </head>
 
-<body>
+<body ng-cloak data-ng-controller="MainCtrl">
 
-    <side-nav></side-nav>
+    <side-nav title="App.name" tabs="App.tabs"></side-nav>
 
     <div class="view-container">
         <div ng-view class="view-frame"></div>
@@ -19,7 +19,7 @@
     <footer class="footer">
         <div class="view-container">
             <p class="small pull-left"></p>
-            <p class="small pull-right">© 2017</p>
+            <p class="small pull-right">© {{getYear()}}</p>
         </div>
     </footer>
 

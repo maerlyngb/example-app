@@ -1,6 +1,5 @@
 @import 'colours.scss';
 @import 'navbar.scss';
-
 html {
     position: relative;
     min-height: 100%;
@@ -16,11 +15,14 @@ body>.view-container {
     margin-left: 300px;
 }
 
-@media (max-width: 767px) {
-  body>.view-container {
-    padding: 15px 15px 0;
-    margin-left: 0;
+[ng\:cloak], [ng-cloak], .ng-cloak {
+  display: none !important;
 }
+
+@media (max-width: 767px) {
+    body>.view-container {
+        margin-left: 0;
+    }
 }
 
 .footer {
@@ -42,14 +44,16 @@ body>.view-container {
 // .navbar-inverse {
 //     background-color: $gray15;
 // }
-
 // .navbar-inverse .navbar-brand {
 //     color: $gray5;
 // }
-
 .asset-summary {
     height: 100px;
-    background-color: white;
-    margin-bottom: 15px;
-    padding: 1rem;
+    background-color: $white;
+    margin-bottom: 15px; //padding: 1rem;
+}
+
+.card {
+    //display: block;
+    background-color: $white;
 }
