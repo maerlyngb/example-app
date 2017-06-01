@@ -3,15 +3,21 @@
 
     angular.
     module('myApp').
-    config(['$locationProvider', '$routeProvider',
-        function config($locationProvider, $routeProvider) {
+    config(['$locationProvider', '$stateProvider', '$urlRouterProvider',
+        function config($locationProvider, $stateProvider, $urlRouterProvider) {
             $locationProvider.hashPrefix('!');
 
-            $routeProvider.
-            when('/', {
-                template: '<landing-page></landing-page>'
-            }).
-            otherwise('/');
+            $stateProvider
+                .state('home', {
+                    url: '/',
+                    template: '<landing-page></landing-page>'
+                })
+                .state('asset-detail', {
+                    url: '/asset/:assetId',
+                    template: '<asset-detail></asset-detail>'
+                });
+
+            $urlRouterProvider.otherwise('/');
         }
     ]);
 })();

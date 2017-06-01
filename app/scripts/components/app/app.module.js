@@ -3,7 +3,7 @@
 
     // Define the `myApp` module
     angular.module('myApp', [
-        'ngRoute',
+        'ui.router',
         'sideNav',
         'topNav',
         'landingPage',
