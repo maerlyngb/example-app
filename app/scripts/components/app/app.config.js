@@ -5,7 +5,7 @@
     module('myApp').
     config(['$locationProvider', '$stateProvider', '$urlRouterProvider',
         function config($locationProvider, $stateProvider, $urlRouterProvider) {
-            $locationProvider.hashPrefix('!');
+            //$locationProvider.hashPrefix('!');
 
             $stateProvider
                 .state('home', {
@@ -13,7 +13,7 @@
                     template: '<landing-page></landing-page>'
                 })
                 .state('asset-detail', {
-                    url: '/asset/:assetId',
+                    url: '/asset/:assetType/:assetId',
                     template: '<asset-detail></asset-detail>'
                 });
 

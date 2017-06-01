@@ -49,11 +49,10 @@ body>.view-container {
 // }
 .asset-summary {
     height: 100px;
-    background-color: $white;
-    margin-bottom: 15px; //padding: 1rem;
 }
 
 .card {
-    //display: block;
+    padding: 1rem;
     background-color: $white;
+    margin-bottom: 15px;
 }

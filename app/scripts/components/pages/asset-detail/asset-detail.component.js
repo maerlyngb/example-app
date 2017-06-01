@@ -6,9 +6,10 @@
     module('assetDetail').
     component('assetDetail', {
         templateUrl: 'views/asset-detail.template.html',
-        controller: [
-            function AssetDetailController() {
-
+        controller: ['$stateParams',
+            function AssetDetailController($stateParams) {
+                this.assetType = $stateParams.assetType;
+                this.assetId = $stateParams.assetId;
             }
         ]
     });

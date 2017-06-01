@@ -3,5 +3,6 @@
 
     // Define the `assetDetail` module
     angular.module('assetDetail', [
+        'ngRoute'
     ]);
 })();

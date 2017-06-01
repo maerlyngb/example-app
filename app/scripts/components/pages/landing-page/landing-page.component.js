@@ -8,7 +8,6 @@
         templateUrl: 'views/landing-page.template.html',
         controller: [
             function landingPageController() {
-
             }
         ]
     });
