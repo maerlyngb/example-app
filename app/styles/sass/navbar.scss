@@ -2,9 +2,9 @@
 
 .nav-side-menu {
   overflow: auto;
-  font-family: verdana;
+  //font-family: verdana;
   font-size: 12px;
-  font-weight: 200;
+  //font-weight: 500;
   background-color: $gray17;
   position: fixed;
   top: 0px;
@@ -47,15 +47,17 @@
 }
 .nav-side-menu ul .sub-menu li.active,
 .nav-side-menu li .sub-menu li.active {
-  color: #d19b3d;
+  background-color: $gray12;
 }
 .nav-side-menu ul .sub-menu li.active a,
 .nav-side-menu li .sub-menu li.active a {
-  color: #d19b3d;
+  background-color: $gray12;
 }
 .nav-side-menu ul .sub-menu li,
 .nav-side-menu li .sub-menu li {
-  background-color: $gray16;
+  //background-color: $gray16;
+
+  padding-left: 34px;
   border: none;
   line-height: 28px;
   border-bottom: 1px solid $gray17;
@@ -65,15 +67,7 @@
 .nav-side-menu li .sub-menu li:hover {
   background-color: $gray13;
 }
-.nav-side-menu ul .sub-menu li:before,
-.nav-side-menu li .sub-menu li:before {
-  font-family: FontAwesome;
-  content: "\f105";
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-  vertical-align: middle;
-}
+
 .nav-side-menu li {
   padding-left: 0px;
   border-left: 3px;
@@ -119,4 +113,8 @@
   .nav-side-menu .menu-list .menu-content {
     display: block;
   }
+}
+
+ul[aria-expanded="true"]{
+  margin-bottom: 10px;
 }

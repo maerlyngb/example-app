@@ -7,7 +7,7 @@
     controller('MainCtrl', ['$scope', '$rootScope',
         function ($scope, $rootScope) {
 
-            var urlPrefix = '/#!'
+            var urlPrefix = '/#!/asset';
 
             //Global application object
             $rootScope.App = {
@@ -15,73 +15,74 @@
                 tabs: [{
                     title: 'Overview',
                     icon: 'fa-dashboard',
-                    href: urlPrefix + '/',
+                    href: '/',
                     index: 1,
-                    active: true
                 }, {
                     title: 'Gas Turbines',
                     icon: 'fa-circle-o',
-                    href: '#',
+                    urlTag: 'gas-turbine',
                     index: 2,
-                    active: false,
                     subtabs: [{
-                        title: 'Gas Turbine 1',
-                        href: urlPrefix + '/asset/gas-turbine/1',
-                        active: false
+                        title: 'Gas Turbine',
+                        id: 1
                     }, {
-                        title: 'Gas Turbine 2',
-                        href: urlPrefix + '/asset/gas-turbine/2',
-                        active: false
+                        title: 'Gas Turbine',
+                        id: 2
                     }]
                 }, {
                     title: 'Steam Turbines',
                     icon: 'fa-dot-circle-o',
-                    href: '#',
+                    urlTag: 'steam-turbine',
                     index: 3,
-                    active: false,
                     subtabs: [{
-                        title: 'Steam Turbine 1',
-                        href: urlPrefix + '/asset/steam-turbine/1',
-                        active: false
+                        title: 'Steam Turbine',
+                        id: 3
                     }, {
-                        title: 'Steam Turbine 2',
-                        href: urlPrefix + '/asset/steam-turbine/2',
-                        active: false
+                        title: 'Steam Turbine',
+                        id: 4
                     }, {
-                        title: 'Steam Turbine 3',
-                        href: urlPrefix + '/asset/steam-turbine/3',
-                        active: false
+                        title: 'Steam Turbine',
+                        id: 5
                     }]
                 }, {
                     title: 'Centrifugal Compressor',
                     icon: 'fa-circle',
-                    href: '#',
+                    urlTag: 'compressor',
                     index: 4,
-                    active: false,
                     subtabs: [{
-                        title: 'Centrifugal Compressor 1',
-                        href: urlPrefix + '/asset/compressor/1',
-                        active: false
+                        title: 'Centrifugal Compressor',
+                        id: 6
                     }, {
-                        title: 'Centrifugal Compressor 2',
-                        href: urlPrefix + '/asset/compressor/2',
-                        active: false
+                        title: 'Centrifugal Compressor',
+                        id: 7
                     }]
                 }, {
                     title: 'Gearbox',
                     icon: 'fa-cog',
-                    href: '#',
+                    urlTag: 'gearbox',
                     index: 5,
-                    active: false,
                     subtabs: [{
-                        title: 'Gearbox 1',
-                        href: urlPrefix + '/asset/gearbox/1',
-                        active: false
+                        title: 'Gearbox',
+                        id: 8
                     }]
                 }]
             };
 
-            $scope.getYear = function(){
+            // build up href attributes on child tabs
+            for (var i = $rootScope.App.tabs.length - 1; i >= 0; i--) {
+                var parent = $rootScope.App.tabs[i];
+
+                if (!parent.subtabs) {
+                    continue;
+                }
+
+                for (var j = parent.subtabs.length - 1; j >= 0; j--) {
+                    var child = parent.subtabs[j];
+                    child.href = urlPrefix + '/' + parent.urlTag + '/' + child.id;
+                }
+            }
+
+            $scope.getYear = function () {
                 var date = new Date();
                 return date.getFullYear();
             };
