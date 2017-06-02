@@ -1,120 +1,164 @@
 @import 'colours.scss';
+//top nav
+.navbar-inverse {
+    background-color: $gray15;
+    border: 0px;
+}
 
+.navbar {
+    min-height: $header-height;
+}
+
+.navbar-brand {
+    line-height: 3rem;
+    color: $gray5;
+}
+
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+    color: $gray5;
+    //background-color: transparent;
+}
+
+//Side nav
 .nav-side-menu {
-  overflow: auto;
-  //font-family: verdana;
-  font-size: 12px;
-  //font-weight: 500;
-  background-color: $gray17;
-  position: fixed;
-  top: 0px;
-  width: 220px;
-  height: 100%;
-  color: $white;
+    overflow: auto; //font-family: verdana;
+    font-size: 12px; //font-weight: 500;
+    background-color: $gray17;
+    margin-top: $header-height;
+    position: fixed;
+    top: 0px;
+    width: 220px;
+    height: 100%;
+    color: $white;
 }
+
 .nav-side-menu .brand {
-  background-color: $gray17;
-  line-height: 50px;
-  display: block;
-  //text-align: center;
-  padding-left: 15px;
-  font-size: 14px;
+    background-color: $gray17;
+    line-height: 50px;
+    display: block; //text-align: center;
+    padding-left: 15px;
+    font-size: 14px;
 }
+
+.brand {
+    background-color: $gray15 !important;
+    font-size: 18px !important;
+}
+
 .nav-side-menu .toggle-btn {
-  display: none;
+    display: none;
 }
+
 .nav-side-menu ul,
 .nav-side-menu li {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-  line-height: 35px;
-  cursor: pointer;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    line-height: 35px;
+    cursor: pointer;
 }
+
 .nav-side-menu ul :not(collapsed) .arrow:before,
 .nav-side-menu li :not(collapsed) .arrow:before {
-  font-family: FontAwesome;
-  content: "\f078";
-  display: inline-block;
-  padding-left: 10px;
-  padding-right: 10px;
-  vertical-align: middle;
-  float: right;
+    font-family: FontAwesome;
+    content: "\f078";
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    float: right;
 }
+
 .nav-side-menu ul .active,
 .nav-side-menu li .active {
-  background-color: $nav-item-active-colour;
+    background-color: $nav-item-active-colour;
 }
+
 .nav-side-menu ul .sub-menu li.active,
 .nav-side-menu li .sub-menu li.active {
-  background-color: $gray12;
+    background-color: $gray12;
 }
+
 .nav-side-menu ul .sub-menu li.active a,
 .nav-side-menu li .sub-menu li.active a {
-  background-color: $gray12;
+    background-color: $gray12;
 }
+
 .nav-side-menu ul .sub-menu li,
 .nav-side-menu li .sub-menu li {
-  //background-color: $gray16;
-
-  padding-left: 34px;
-  border: none;
-  line-height: 28px;
-  border-bottom: 1px solid $gray17;
-  margin-left: 0px;
+    //background-color: $gray16;
+    padding-left: 34px;
+    border: none;
+    line-height: 28px;
+    border-bottom: 1px solid $gray17;
+    margin-left: 0px;
 }
+
 .nav-side-menu ul .sub-menu li:hover,
 .nav-side-menu li .sub-menu li:hover {
-  background-color: $gray13;
+    background-color: $gray13;
 }
 
 .nav-side-menu li {
-  padding-left: 0px;
-  border-left: 3px;
-}
-.nav-side-menu li a {
-  text-decoration: none;
-  color: $white;
-;
-}
-.nav-side-menu li a i {
-  padding-left: 10px;
-  width: 20px;
-  padding-right: 20px;
-}
-.nav-side-menu li:hover {
-  background-color: $gray13;
-}
-@media (max-width: 767px) {
-  .nav-side-menu {
-    position: relative;
-    width: 100%;
-  }
-  .nav-side-menu .toggle-btn {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    z-index: 10 !important;
-    padding: 3px;
-    color: $gray5;
-    width: 40px;
-    text-align: center;
-  }
-  .brand {
-    text-align: left !important;
-    font-size: 22px;
-    padding-left: 20px;
-    line-height: 50px !important;
-  }
-}
-@media (min-width: 767px) {
-  .nav-side-menu .menu-list .menu-content {
-    display: block;
-  }
+    padding-left: 0px;
+    border-left: 3px;
 }
 
-ul[aria-expanded="true"]{
-  margin-bottom: 10px;
+.nav-side-menu li a {
+    text-decoration: none;
+    color: $white;
+    ;
+}
+
+.nav-side-menu li a i {
+    padding-left: 10px;
+    width: 20px;
+    padding-right: 20px;
+}
+
+.nav-side-menu li:hover {
+    background-color: $gray13;
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        display: none;
+    }
+    .nav-side-menu {
+        position: relative;
+        width: 100%;
+        margin-top: 0;
+    }
+    .nav-side-menu .toggle-btn {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 10px;
+        top: 14px;
+        z-index: 10 !important;
+        padding: 3px;
+        color: $gray5;
+        width: 40px;
+        text-align: center;
+    }
+    .brand {
+        text-align: left !important;
+        font-size: 22px;
+        padding-left: 20px;
+        line-height: $header-height !important;
+        color: $gray5;
+    }
+}
+
+@media (min-width: 767px) {
+    .nav-side-menu .menu-list .menu-content {
+        display: block;
+    }
+    .brand {
+        display: none !important;
+    }
+}
+
+ul[aria-expanded="true"] {
+    margin-bottom: 10px;
 }

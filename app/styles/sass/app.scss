@@ -14,6 +14,7 @@ body {
 .view-container {
     padding: 5px 5px 0;
     margin-left: 220px;
+    margin-top: $header-height;
 }
 
 // hide {{ }} when populating model data
@@ -24,6 +25,7 @@ body {
 @media (max-width: 767px) {
     .view-container {
         margin-left: 0;
+        margin-top: 0;
     }
 }
 
