@@ -5,7 +5,6 @@
     angular.module('assetDetail', [
         'ngRoute',
         'chart.js',
-        'api.asset',
-        'assetSummary'
+        'api.asset'
     ]);
 })();
