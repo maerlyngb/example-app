@@ -5,7 +5,7 @@
     angular.
     module('topNav').
     component('topNav', {
-        templateUrl: 'views/top-nav.template.html',
+        templateUrl: 'views/widgets/top-nav.template.html',
         controller: [
             function TopNavController() {
                 this.appName = 'GTS Dashboard';

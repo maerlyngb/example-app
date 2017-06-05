@@ -5,7 +5,7 @@
     angular.
     module('sideNav').
     component('sideNav', {
-        templateUrl: 'views/side-nav.template.html',
+        templateUrl: 'views/widgets/side-nav.template.html',
         controller: ['$scope', '$location',
             function SideNavController($scope, $location) {
 

@@ -5,7 +5,7 @@
     angular.
     module('assetSummary').
     component('assetSummary', {
-        templateUrl: 'views/asset-summary.template.html',
+        templateUrl: 'views/widgets/asset-summary.template.html',
         controller: [
             function AssetSummaryController() {
 

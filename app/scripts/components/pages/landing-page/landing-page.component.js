@@ -5,7 +5,7 @@
     angular.
     module('landingPage').
     component('landingPage', {
-        templateUrl: 'views/landing-page.template.html',
+        templateUrl: 'views/pages/landing-page.template.html',
         controller: [
             function landingPageController() {
             }

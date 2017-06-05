@@ -4,7 +4,10 @@ module.exports = function (gulp, APP_DIR, DIST_DIR) {
     return function () {
 
         var paths = {
-            dirs: ['views'],
+            dirs: [
+                'views',
+                'img'
+            ],
             files: [
                 'index.html',
                 'scripts/app.js',

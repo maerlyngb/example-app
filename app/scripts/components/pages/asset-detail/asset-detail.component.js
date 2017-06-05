@@ -5,7 +5,7 @@
     angular.
     module('assetDetail').
     component('assetDetail', {
-        templateUrl: 'views/asset-detail.template.html',
+        templateUrl: 'views/pages/asset-detail.template.html',
         controller: ['$stateParams', 'Asset',
             function AssetDetailController($stateParams, Asset) {
 
