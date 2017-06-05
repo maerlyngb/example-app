@@ -1,8 +1,82 @@
-<div class="card">
-    <h1>Asset Detail</h1>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <h1>Asset Detail</h1>
+    </div>
 </div>
 
-<div class="card">
-    <p>Equipment Type: {{$ctrl.assetData.type}}</p>
-    <p>Equipment ID: {{$ctrl.assetId}}</p>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p>Equipment Type: {{$ctrl.assetData.type}}</p>
+        <p>Equipment ID: {{$ctrl.assetId}}</p>
+    </div>
+</div>
+
+
+
+<div class="row">
+
+    <!--<div class="col-xl-4 col-md-6 col-sm-12">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+
+                </h3>
+            </div>
+            <div class="panel-body">
+
+            </div>
+        </div>
+    </div>-->
+
+    <div class="col-xl-4 col-md-6 col-sm-12">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title text-uppercase">
+                    Live Performance
+                </h3>
+            </div>
+            <asset-summary></asset-summary>
+        </div>
+    </div>
+
+    <div class="col-xl-4 col-md-6 col-sm-12">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h3 class="panel-title text-uppercase">Line Chart</h3>
+            </div>
+            <div class="panel-body">
+                <canvas class="chart chart-line" chart-data="$ctrl.lchart.data" chart-labels="$ctrl.lchart.labels" chart-series="$ctrl.lchart.series"
+                    chart-options="$ctrl.lchart.options" chart-dataset-override="$ctrl.lchart.datasetOverride" chart-click="$ctrl.lchart.onClick">
+                </canvas>
+            </div>
+        </div>
+    </div>
+    <!-- /col -->
+
+    <div class="col-xl-4 col-md-6 col-sm-12">
+        <div class="panel panel-warning">
+            <div class="panel-heading">
+                <h3 class="panel-title text-uppercase">Bar Chart</h3>
+            </div>
+            <div class="panel-body">
+                <canvas class="chart chart-bar" chart-data="$ctrl.bchart.data" chart-labels="$ctrl.bchart.labels" chart-series="$ctrl.bchart.series">
+                </canvas>
+            </div>
+        </div>
+    </div>
+    <!-- /col -->
+
+    <div class="col-xl-4 col-md-6 col-sm-12">
+        <div class="panel panel-danger">
+            <div class="panel-heading">
+                <h3 class="panel-title text-uppercase">Line Chart</h3>
+            </div>
+            <div class="panel-body">
+                <canvas class="chart chart-line" chart-data="$ctrl.lchart.data" chart-labels="$ctrl.lchart.labels" chart-series="$ctrl.lchart.series"
+                    chart-options="$ctrl.lchart.options" chart-dataset-override="$ctrl.lchart.datasetOverride" chart-click="$ctrl.lchart.onClick">
+                </canvas>
+            </div>
+        </div>
+    </div>
+    <!-- /col -->
 </div>

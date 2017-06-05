@@ -14,12 +14,12 @@
                 name: 'GTS Dashboard',
                 tabs: [{
                     title: 'Overview',
-                    icon: 'fa-dashboard',
+                    icon: 'glyphicon-dashboard',
                     href: '/',
                     index: 1,
                 }, {
                     title: 'Gas Turbines',
-                    icon: 'fa-circle-o',
+                    icon: 'glyphicon-asterisk',
                     urlTag: 'gas-turbine',
                     index: 2,
                     subtabs: [{
@@ -31,7 +31,7 @@
                     }]
                 }, {
                     title: 'Steam Turbines',
-                    icon: 'fa-dot-circle-o',
+                    icon: 'glyphicon-certificate',
                     urlTag: 'steam-turbine',
                     index: 3,
                     subtabs: [{
@@ -46,7 +46,7 @@
                     }]
                 }, {
                     title: 'Centrifugal Compressor',
-                    icon: 'fa-circle',
+                    icon: 'glyphicon-refresh',
                     urlTag: 'compressor',
                     index: 4,
                     subtabs: [{
@@ -58,7 +58,7 @@
                     }]
                 }, {
                     title: 'Gearbox',
-                    icon: 'fa-cog',
+                    icon: 'glyphicon-cog',
                     urlTag: 'gearbox',
                     index: 5,
                     subtabs: [{

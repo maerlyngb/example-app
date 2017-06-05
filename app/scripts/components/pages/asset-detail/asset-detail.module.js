@@ -4,6 +4,8 @@
     // Define the `assetDetail` module
     angular.module('assetDetail', [
         'ngRoute',
-        'api.asset'
+        'chart.js',
+        'api.asset',
+        'assetSummary'
     ]);
 })();

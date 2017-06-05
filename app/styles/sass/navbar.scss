@@ -14,9 +14,13 @@
     color: $gray5;
 }
 
-.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+.navbar-inverse .navbar-brand {
+    color: $gray5; //background-color: transparent;
+}
+
+.navbar-inverse .navbar-brand:focus,
+.navbar-inverse .navbar-brand:hover {
     color: $gray5;
-    //background-color: transparent;
 }
 
 //Side nav

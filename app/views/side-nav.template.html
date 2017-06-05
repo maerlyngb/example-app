@@ -1,4 +1,4 @@
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
 
 <div class="nav-side-menu">
     <div class="brand">{{$ctrl.title}}</div>
@@ -13,13 +13,13 @@
                     data-target="#sub-menu-{{$index}}"
                     ng-class="{active: $ctrl.isParentActive(tab.urlTag), collapsed: tab.subtabs.length > 0}">
                     <a ng-href="{{tab.href}}">
-                        <i class="fa fa-lg" ng-class="tab.icon"></i>
+                        <i class="glyphicon" ng-class="tab.icon" aria-hidden="true"></i>
                         <span>{{tab.title}}</span>
                         <span ng-show="tab.subtabs.length > 0" class="arrow"></span>
                     </a>
                 </li> <!--menu item-->
 
-                <ul class="sub-menu collapse" id="sub-menu-{{$index}}">
+                <ul class="sub-menu collapse" id="sub-menu-{{$index}}" ng-if="tab.subtabs.length > 0">
                     <li ng-repeat="subtab in tab.subtabs | orderBy:'tab_id'" ng-class="{active: $ctrl.isChildActive(subtab.href)}">
                         <a ng-href="{{subtab.href}}">{{ subtab.title }}</a>
                     </li>
