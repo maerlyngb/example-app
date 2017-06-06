@@ -9,28 +9,8 @@
 
 
 <div class="row">
-    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <asset-summary id="1"></asset-summary>
-    </div>
-    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <asset-summary id="2"></asset-summary>
-    </div>
-    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <asset-summary id="3"></asset-summary>
-    </div>
-    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <asset-summary id="4"></asset-summary>
-    </div>
-    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <asset-summary id="5"></asset-summary>
-    </div>
-    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <asset-summary id="6"></asset-summary>
-    </div>
-    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <asset-summary id="7"></asset-summary>
-    </div>
-    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-        <asset-summary id="8"></asset-summary>
+    <div ng-repeat="asset in $ctrl.assets"
+         class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+         <asset-summary id="asset"></asset-summary>
     </div>
 </div>

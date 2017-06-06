@@ -8,6 +8,7 @@
         templateUrl: 'views/pages/landing-page.template.html',
         controller: [
             function landingPageController() {
+                this.assets = [1, 2, 3, 4, 5, 6, 7, 8];
             }
         ]
     });

@@ -1,5 +1,5 @@
 {
-  "name": "Example App",
+  "name": "example-app",
   "private": true,
   "version": "0.1.0",
   "description": "Example AngularJS application",
@@ -16,6 +16,7 @@
     "gulp-clean-css": "^3.4.0",
     "gulp-concat": "latest",
     "gulp-connect": "latest",
+    "gulp-esdoc": "^0.4.1",
     "gulp-eslint": "^3.0.1",
     "gulp-sass": "latest",
     "gulp-sourcemaps": "^2.6.0",

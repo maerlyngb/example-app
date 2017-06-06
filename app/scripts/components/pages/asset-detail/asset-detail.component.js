@@ -20,6 +20,15 @@
                     self.assetData = data;
                 });
 
+                setTimeout(function () {
+                    $('.panel-eq-height').matchHeight();
+                }, 1);
+
+
+                $(window).on('resize', function () {
+                    $('.panel-eq-height').matchHeight();
+                });
+
                 this.lchart = {
                     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
                     series: ['Series A', 'Series B'],
@@ -35,17 +44,18 @@
                     options: {
                         scales: {
                             yAxes: [{
-                                id: 'y-axis-1',
-                                type: 'linear',
-                                display: true,
-                                position: 'left'
-                            },
-                            {
-                                id: 'y-axis-2',
-                                type: 'linear',
-                                display: true,
-                                position: 'right'
-                            }]
+                                    id: 'y-axis-1',
+                                    type: 'linear',
+                                    display: true,
+                                    position: 'left'
+                                },
+                                {
+                                    id: 'y-axis-2',
+                                    type: 'linear',
+                                    display: true,
+                                    position: 'right'
+                                }
+                            ]
                         }
                     }
                     // ,

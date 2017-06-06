@@ -23,10 +23,10 @@
                     urlTag: 'gas-turbine',
                     index: 2,
                     subtabs: [{
-                        title: 'Gas Turbine',
+                        title: 'GT-1',
                         id: 1
                     }, {
-                        title: 'Gas Turbine',
+                        title: 'GT-2',
                         id: 2
                     }]
                 }, {
@@ -35,13 +35,13 @@
                     urlTag: 'steam-turbine',
                     index: 3,
                     subtabs: [{
-                        title: 'Steam Turbine',
+                        title: 'ST-3',
                         id: 3
                     }, {
-                        title: 'Steam Turbine',
+                        title: 'ST-4',
                         id: 4
                     }, {
-                        title: 'Steam Turbine',
+                        title: 'ST-5',
                         id: 5
                     }]
                 }, {
@@ -50,10 +50,10 @@
                     urlTag: 'compressor',
                     index: 4,
                     subtabs: [{
-                        title: 'Centrifugal Compressor',
+                        title: 'CC-6',
                         id: 6
                     }, {
-                        title: 'Centrifugal Compressor',
+                        title: 'CC-7',
                         id: 7
                     }]
                 }, {
@@ -62,7 +62,7 @@
                     urlTag: 'gearbox',
                     index: 5,
                     subtabs: [{
-                        title: 'Gearbox',
+                        title: 'G-8',
                         id: 8
                     }]
                 }]

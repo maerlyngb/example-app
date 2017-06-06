@@ -7,6 +7,7 @@ module.exports = function (gulp, APP_DIR, DIST_DIR) {
             dirs: [
                 'views',
                 'img',
+                'sample-data',
                 'bower_components/bootstrap/dist/fonts',
             ],
             files: [
