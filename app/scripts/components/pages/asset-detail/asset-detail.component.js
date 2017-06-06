@@ -20,15 +20,6 @@
                     self.assetData = data;
                 });
 
-                setTimeout(function () {
-                    $('.panel-eq-height').matchHeight();
-                }, 1);
-
-
-                $(window).on('resize', function () {
-                    $('.panel-eq-height').matchHeight();
-                });
-
                 this.lchart = {
                     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
                     series: ['Series A', 'Series B'],
@@ -101,6 +92,16 @@
                         delta: ''
                     }]
                 };
+
+                // after the charts have rendered, match all panel heights
+                // this could be done better...
+                setTimeout(function () {
+                    $('.panel-eq-height').matchHeight();
+                }, 1);
+
+                $(window).on('resize', function () {
+                    $.fn.matchHeight._update();
+                });
             }
         ]
     });
