@@ -14,7 +14,7 @@ module.exports = function (gulp, APP_DIR) {
     return function () {
         // set up the browserify instance on a task basis
         var b = browserify({
-            entries: APP_DIR + 'scripts/modules.js',
+            entries: APP_DIR + 'scripts/components/modules.js',
             debug: false
         });
 
