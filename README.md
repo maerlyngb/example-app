@@ -45,13 +45,15 @@ gulp dist
 ├── app/                          --> all the source code of the app
 │   ├── bower_components/         --> 3rd party JS/CSS libraries
 │   ├── img/                      --> applicaiton images
+│   ├── sample-data/              --> sample data used to simulate API calls
 │   ├── scripts/                  --> Application JS files
 │   │   ├── app.js                --> All app JS files compiled into one files
 │   │   ├── components/           --> Custom AngularJS components
+│   │   │   ├── api/              --> AngularJS services to get data from external sources
 │   │   │   ├── app/              --> Main application component
 │   │   │   ├── pages/            --> Applicaiton 'pages'
-│   │   │   └── widgets/          --> Reusable UI components
-│   │   └── entry.js              --> Describes all JS dependancies to be compiled into app.js
+│   │   │   ├── widgets/          --> Reusable UI components
+│   │   │   └── modules.js        --> Lists all JS dependancies to be compiled into app.js
 │   ├── styles/                   --> Applicaiton styling
 │   │   ├── app.css               --> Compiled css
 │   │   └── sass/                 --> Styling
