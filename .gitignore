@@ -7,4 +7,5 @@ tmp
 .DS_Store
 bower_components/
 app/scripts/app.js
-app/styles/app.css
+app/styles/app.*
+sassdoc/
