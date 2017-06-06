@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "Example App",
   "private": true,
-  "version": "0.0.1",
-  "description": "A starter application for AngularJS apps",
-  "repository": "https://github.com/maerlyngb/angular-seed",
+  "version": "0.1.0",
+  "description": "Example AngularJS application",
+  "repository": "https://github.com/maerlyngb/example-app",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.7.7",
@@ -29,6 +29,7 @@
     "karma-firefox-launcher": "^0.1.7",
     "karma-jasmine": "^0.3.8",
     "protractor": "^4.0.9",
+    "sassdoc": "^2.2.2",
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0"
   },
