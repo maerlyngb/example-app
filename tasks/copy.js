@@ -6,13 +6,13 @@ module.exports = function (gulp, APP_DIR, DIST_DIR) {
         var paths = {
             dirs: [
                 'views',
-                'img'
+                'img',
+                'bower_components/bootstrap/dist/fonts',
             ],
             files: [
                 'index.html',
                 'scripts/app.js',
                 'styles/app.css',
-                'styles/app.css.map',
                 'bower_components/bootstrap/dist/js/bootstrap.min.js',
                 'bower_components/bootstrap/dist/css/bootstrap.min.css'
             ],

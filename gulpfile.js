@@ -35,5 +35,9 @@ gulp.task('copy', ['clean', 'js.min', 'sass'], getTask('copy'));
 // build distributable
 gulp.task('dist', ['clean', 'js.min', 'sass', 'copy']);
 
+// copy files to dist folder
+gulp.task('serve-dist', ['dist'], getTask('serve-dist'));
+
+
 // compile css, server app, watch for changes
 gulp.task('default', ['lint', 'js', 'sass', 'serve', 'watch']);
