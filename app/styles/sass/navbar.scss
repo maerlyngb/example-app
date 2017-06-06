@@ -62,15 +62,28 @@
     cursor: pointer;
 }
 
-.nav-side-menu ul :not(collapsed) .arrow:before,
-.nav-side-menu li :not(collapsed) .arrow:before {
-    font-family: FontAwesome;
-    content: "\f078";
+.nav-side-menu ul .arrow:before,
+.nav-side-menu li .arrow:before {
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    top: 8px;
+    position: relative;
+}
+
+.collapsed .arrow:before {
+    content: "\e114";// chevron-down
+}
+
+.arrow:before{
+    content: "\e113";// chevron-down
+}
+
+.nav-sub-menu-icon{
     display: inline-block;
     padding-left: 10px;
     padding-right: 10px;
     vertical-align: middle;
-    float: right;
 }
 
 .nav-side-menu ul .active,
@@ -138,7 +151,7 @@
         cursor: pointer;
         position: absolute;
         right: 10px;
-        top: 14px;
+        top: 15px;
         z-index: 10 !important;
         padding: 3px;
         color: $gray5;

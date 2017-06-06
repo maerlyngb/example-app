@@ -2,7 +2,7 @@
 
 <div class="nav-side-menu">
     <div class="brand">{{$ctrl.title}}</div>
-    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+    <i class="glyphicon glyphicon-2x glyphicon-menu-hamburger toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
 
     <div class="menu-list">
 
@@ -15,7 +15,10 @@
                     <a ng-href="{{tab.href}}">
                         <i class="glyphicon" ng-class="tab.icon" aria-hidden="true"></i>
                         <span>{{tab.title}}</span>
-                        <span ng-show="tab.subtabs.length > 0" class="arrow"></span>
+                        <!--<span ng-show="tab.subtabs.length > 0" class="arrow"></span>-->
+                        <span ng-if="tab.subtabs.length > 0"
+                           class="glyphicon pull-right arrow"
+                           aria-hidden="true"></span>
                     </a>
                 </li> <!--menu item-->
 
