@@ -11,6 +11,7 @@ module.exports = function (gulp, APP_DIR, DIST_DIR) {
             ],
             files: [
                 'index.html',
+                'favicon.ico',
                 'scripts/app.js',
                 'styles/app.css',
                 'bower_components/bootstrap/dist/js/bootstrap.min.js',
