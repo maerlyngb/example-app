@@ -20,8 +20,8 @@ gulp.task('js.min', getTask('js.min'));
 // compile sass
 gulp.task('sass', getTask('sass'));
 
-// run app
-gulp.task('serve', getTask('serve'));
+// run app for development
+gulp.task('serve', ['lint', 'js', 'sass'], getTask('serve'));
 
 // watch for file changes and do any required processing
 gulp.task('watch', getTask('watch'));
