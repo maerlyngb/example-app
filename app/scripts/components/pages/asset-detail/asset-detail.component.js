@@ -45,8 +45,7 @@
                                 type: 'linear',
                                 display: true,
                                 position: 'right'
-                            }
-                            ]
+                            }]
                         }
                     }
                     // ,
@@ -62,6 +61,36 @@
                         [65, 59, 80, 81, 56, 55, 40],
                         [28, 48, 40, 19, 86, 27, 90]
                     ],
+                };
+
+                this.assetPerf = {
+                    headings: [
+                        'tag',
+                        'value',
+                        'status',
+                        'delta'
+                    ],
+                    data: [{
+                        tag: 'tag-name',
+                        value: '4',
+                        status: 'healthy',
+                        delta: ''
+                    }, {
+                        tag: 'tag-name',
+                        value: '4',
+                        status: 'healthy',
+                        delta: ''
+                    }, {
+                        tag: 'tag-name',
+                        value: '4',
+                        status: 'healthy',
+                        delta: ''
+                    }, {
+                        tag: 'tag-name',
+                        value: '4',
+                        status: 'healthy',
+                        delta: ''
+                    }]
                 };
             }
         ]

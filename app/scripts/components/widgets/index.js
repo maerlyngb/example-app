@@ -4,4 +4,5 @@
     require('./side-nav');
     require('./top-nav');
     require('./asset-summary');
+    require('./asset-grid');
 })();

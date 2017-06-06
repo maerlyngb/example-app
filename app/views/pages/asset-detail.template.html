@@ -4,29 +4,7 @@
     </div>
 </div>
 
-<div class="panel panel-default">
-    <div class="panel-body">
-        <p>Equipment Type: {{$ctrl.assetData.type}}</p>
-        <p>Equipment ID: {{$ctrl.assetId}}</p>
-    </div>
-</div>
-
-
-
 <div class="row">
-
-    <!--<div class="col-xl-4 col-md-6 col-sm-12">
-        <div class="panel panel-success">
-            <div class="panel-heading">
-                <h3 class="panel-title">
-
-                </h3>
-            </div>
-            <div class="panel-body">
-
-            </div>
-        </div>
-    </div>-->
 
     <div class="col-xl-4 col-md-6 col-sm-12">
         <div class="panel panel-success">
@@ -35,7 +13,8 @@
                     Live Performance
                 </h3>
             </div>
-
+            <asset-grid headings="$ctrl.assetPerf.headings"
+                        data="$ctrl.assetPerf.data"></asset-grid>
         </div>
     </div>
 
