@@ -65,6 +65,15 @@
                         title: 'G-8',
                         id: 8
                     }]
+                }, {
+                    title: 'New Menu Item',
+                    icon: 'glyphicon-cog',
+                    urlTag: 'demo/testing',
+                    index: 6,
+                    subtabs: [{
+                        title: 'demo sub tab',
+                        id: 9
+                    }]
                 }]
             };
 

@@ -7,6 +7,7 @@
         'sideNav',
         'topNav',
         'landingPage',
-        'assetDetail'
+        'assetDetail',
+        'assetAnalysis'
     ]);
 })();
