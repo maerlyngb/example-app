@@ -4,7 +4,7 @@
     require('angular');
     require('angular-route');
     require('angular-resource');
-    require('angular-ui-router');
+    require('@uirouter/angularjs');
 
     require('chart.js');
     require('angular-chart.js');
