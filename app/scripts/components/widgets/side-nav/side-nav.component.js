@@ -25,11 +25,10 @@
                 this.isParentActive = function (urlTag) {
                     var isParentActive = false;
 
-                    if(!urlTag && (this.currentPath === '/')){
+                    if (!urlTag && (this.currentPath === '/')) {
                         // we are on the home page
                         isParentActive = true;
-                    }
-                    else{
+                    } else {
                         var pathArray = this.currentPath.split('/');
                         isParentActive = (pathArray[2] === urlTag);
                     }
