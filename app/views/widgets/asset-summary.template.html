@@ -1,8 +1,14 @@
-<div class="panel">
+<div class="panel panel-default">
     <div class="panel-heading">
         <span class="panel-title text-uppercase">{{$ctrl.assetData.name}}</span>
-        <span class="pull-right text-uppercase text-muted">{{$ctrl.assetData.type}}</span>
+        <i class="glyphicon pull-right text-muted" ng-class="$ctrl.assetData.icon" aria-hidden="true"></i>
     </div>
     <div class="panel-body">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <canvas id="doughnut" class="chart chart-doughnut" chart-data="$ctrl.data" chart-labels="$ctrl.labels">
+                </canvas>
+            </div>
+        </div>
     </div>
 </div>
