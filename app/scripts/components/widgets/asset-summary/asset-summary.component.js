@@ -20,20 +20,20 @@
                         }, function (data) {
                             self.assetData = data;
                             switch (self.assetData.type) {
-                                case 'Gas Turbine':
-                                    self.assetData.icon = 'glyphicon-asterisk';
-                                    break;
-                                case 'Steam Turbine':
-                                    self.assetData.icon = 'glyphicon-certificate';
-                                    break;
-                                case 'Centrifugal Compressor':
-                                    self.assetData.icon = 'glyphicon-refresh';
-                                    break;
-                                case 'Gearbox':
-                                    self.assetData.icon = 'glyphicon-cog';
-                                    break;
-                                default:
-                                    break;
+                            case 'Gas Turbine':
+                                self.assetData.icon = 'glyphicon-asterisk';
+                                break;
+                            case 'Steam Turbine':
+                                self.assetData.icon = 'glyphicon-certificate';
+                                break;
+                            case 'Centrifugal Compressor':
+                                self.assetData.icon = 'glyphicon-refresh';
+                                break;
+                            case 'Gearbox':
+                                self.assetData.icon = 'glyphicon-cog';
+                                break;
+                            default:
+                                break;
                             }
                         });
                     }
