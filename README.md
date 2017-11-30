@@ -1,5 +1,8 @@
 # Example AngularJS Application
 
+![Overview screen](/img/overview.png)
+![Detail screen](/img/detail.png)
+
 ## Prerequisites
 
 ### Git
